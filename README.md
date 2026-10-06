@@ -32,6 +32,8 @@ Ogni script ha una **guida dedicata su [sysadmin-italia.it](https://sysadmin-ita
 
 I file sono salvati in UTF-8 con BOM quando contengono caratteri accentati, così funzionano correttamente anche con Windows PowerShell 5.1.
 
+Il repository si aggiorna automaticamente ogni settimana con gli script pubblicati sul sito.
+
 ## Contribuire
 
 Hai trovato un bug o hai un miglioramento? Apri una *Issue* o una *Pull Request*. Le segnalazioni con l'errore completo e la versione di PowerShell (`$PSVersionTable`) sono le più utili.

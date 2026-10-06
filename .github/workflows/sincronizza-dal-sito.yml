@@ -1,0 +1,27 @@
+name: Sincronizza script dal sito
+
+on:
+  schedule:
+    - cron: "23 4 * * 1"   # ogni lunedì alle 04:23 UTC
+  workflow_dispatch:       # avvio manuale dalla scheda Actions
+
+permissions:
+  contents: write
+
+jobs:
+  sincronizza:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Identità per il commit automatico
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Scarica gli script da sysadmin-italia.it
+        shell: pwsh
+        run: ./tools/Crea-RepoScript.ps1 -Destinazione . -UtenteGitHub SYSADMIN-Italia
+
+      - name: Pubblica le modifiche
+        run: git push

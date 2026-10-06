@@ -1,0 +1,22 @@
+# Script PowerShell: VMware ESXi
+
+14 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
+
+| Script | Cosa fa | Prerequisiti | Guida |
+|---|---|---|---|
+| [`Audit-PermessiVCenter.ps1`](Audit-PermessiVCenter.ps1) | Esporta tutti i permessi assegnati a utenti e gruppi su vCenter, con ambito e ruolo. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/audit-permessi-utenti-su-vcenter/) |
+| [`Verifica-ConfigurazioneHADRS.ps1`](Verifica-ConfigurazioneHADRS.ps1) | Verifica lo stato di attivazione e configurazione di HA e DRS su ciascun cluster. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/configurazione-ha-drs-su-un-cluster/) |
+| [`Report-EventiCriticiVCenter.ps1`](Report-EventiCriticiVCenter.ps1) | Estrae gli eventi di tipo errore registrati su vCenter nelle ultime N ore. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/eventi-critici-recenti-su-vcenter/) |
+| [`Export-InventarioVM.ps1`](Export-InventarioVM.ps1) | Esporta un inventario completo di tutte le macchine virtuali con CPU, RAM, storage e host. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/inventario-completo-delle-vm-con-specifiche/) |
+| [`Verifica-LicenzeESXiScadenza.ps1`](Verifica-LicenzeESXiScadenza.ps1) | Confronta le licenze assegnate agli host con un elenco di scadenze tracciato manualmente. | Modulo VMware.PowerCLI, file di tracciamento scadenze | [Guida](https://sysadmin-italia.it/licenze-esxi-in-scadenza/) |
+| [`Stop-VMOrdinato.ps1`](Stop-VMOrdinato.ps1) | Spegne le macchine virtuali in un ordine di priorita configurato, per uno scenario di down UPS imminente. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/spegnimento-ordinato-delle-vm-down-ups/) |
+| [`Verifica-DatastoreSpazio.ps1`](Verifica-DatastoreSpazio.ps1) | Verifica lo spazio libero su tutti i datastore, segnalando quelli sotto la soglia configurata. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/stato-datastore-e-spazio-disponibile/) |
+| [`Report-RisorseHostESXi.ps1`](Report-RisorseHostESXi.ps1) | Riepiloga l’utilizzo corrente di CPU e memoria per ciascun host ESXi gestito. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/utilizzo-risorse-cpu-ram-per-host-esxi/) |
+| [`Verifica-BuildESXi.ps1`](Verifica-BuildESXi.ps1) | Verifica versione e build di ESXi su tutti gli host, individuando incoerenze nel cluster. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/versione-build-esxi-su-tutti-gli-host/) |
+| [`Report-DischiThinVicinoLimite.ps1`](Report-DischiThinVicinoLimite.ps1) | Individua VM con dischi thin provisioned il cui datastore sottostante si sta esaurendo. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/vm-con-dischi-thin-provisioned-vicini-al-limite/) |
+| [`Report-SnapshotVecchi.ps1`](Report-SnapshotVecchi.ps1) | Individua le macchine virtuali con snapshot piu vecchi della soglia configurata. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/vm-con-snapshot-attivi-da-piu-di-x-giorni/) |
+| [`Report-VMToolsNonAggiornati.ps1`](Report-VMToolsNonAggiornati.ps1) | Individua le macchine virtuali con VMware Tools non aggiornati o non in esecuzione. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/vm-con-vmware-tools-non-aggiornati/) |
+| [`Report-VMPerCluster.ps1`](Report-VMPerCluster.ps1) | Riepiloga il numero di VM per cluster, con conteggio di accese/spente e host in salute. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/vm-raggruppate-per-cluster-con-stato-salute/) |
+| [`Report-VMSpenteDaTempo.ps1`](Report-VMSpenteDaTempo.ps1) | Individua le macchine virtuali spente da tempo, candidate a revisione o eliminazione. | Modulo VMware.PowerCLI, connessione a vCenter | [Guida](https://sysadmin-italia.it/vm-spente-da-piu-di-30-giorni/) |
+
+[← Tutte le categorie](../README.md) · [SysAdmin Italia](https://sysadmin-italia.it/script-gratuiti/)

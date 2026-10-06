@@ -1,0 +1,24 @@
+# Script PowerShell: Cyber Security
+
+16 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
+
+| Script | Cosa fa | Prerequisiti | Guida |
+|---|---|---|---|
+| [`Report-ServiziPasswordNonScadente.ps1`](Report-ServiziPasswordNonScadente.ps1) | Individua specificamente gli account di servizio (con SPN associato) con password impostata per non scadere mai. | Modulo ActiveDirectory | [Guida](https://sysadmin-italia.it/account-di-servizio-con-password-non-scadente/) |
+| [`Audit-DomainAdmins-1.ps1`](Audit-DomainAdmins-1.ps1) | Elenca i membri attuali di Domain Admins, confrontandoli con un elenco di riferimento atteso. | Modulo ActiveDirectory | [Guida](https://sysadmin-italia.it/audit-dei-membri-del-gruppo-domain-admins/) |
+| [`Report-CertificatiScadenza.ps1`](Report-CertificatiScadenza.ps1) | Controlla i certificati installati su un elenco di server, segnalando quelli in scadenza a breve. | PowerShell Remoting sui server target | [Guida](https://sysadmin-italia.it/certificati-in-scadenza-su-piu-sistemi/) |
+| [`Verifica-FirewallEndpoint.ps1`](Verifica-FirewallEndpoint.ps1) | Verifica che il firewall Windows sia attivo su tutti i profili di rete su un elenco di computer. | PowerShell Remoting sui computer target | [Guida](https://sysadmin-italia.it/configurazione-firewall-locale-su-endpoint/) |
+| [`Verifica-PolicyPassword.ps1`](Verifica-PolicyPassword.ps1) | Verifica se la password policy del dominio rispetta soglie minime di sicurezza consigliate. | Modulo ActiveDirectory | [Guida](https://sysadmin-italia.it/controllo-conformita-policy-password/) |
+| [`Report-LoginFalliti.ps1`](Report-LoginFalliti.ps1) | Analizza il log di sicurezza per individuare pattern di tentativi di accesso falliti ripetuti. | Permessi di lettura sul log di sicurezza | [Guida](https://sysadmin-italia.it/eventi-di-login-falliti-rilevamento-bruteforce/) |
+| [`Scan-FileModificatiRecenti.ps1`](Scan-FileModificatiRecenti.ps1) | Cerca file modificati in un intervallo sospetto e in numero elevato, indicatore possibile di ransomware attivo. | Permessi di lettura sui percorsi analizzati | [Guida](https://sysadmin-italia.it/file-modificati-di-recente-indicatore-ransomware/) |
+| [`Audit-EventiSicurezzaCritici.ps1`](Audit-EventiSicurezzaCritici.ps1) | Estrae dal log di sicurezza gli eventi corrispondenti a Event ID considerati critici per un audit. | Permessi di lettura sul log di sicurezza | [Guida](https://sysadmin-italia.it/log-eventi-di-sicurezza-critici/) |
+| [`Report-PermessiCartelleCondivise.ps1`](Report-PermessiCartelleCondivise.ps1) | Analizza le condivisioni di rete e segnala quelle con permessi troppo ampi (Everyone, Authenticated Users). | Permessi amministrativi sul server con le condivisioni | [Guida](https://sysadmin-italia.it/permessi-eccessivi-su-cartelle-condivise/) |
+| [`Scan-PorteAperte.ps1`](Scan-PorteAperte.ps1) | Testa un elenco di porte comuni su un range di indirizzi IP, riportando quelle raggiungibili. | Connettivita di rete verso il range target | [Guida](https://sysadmin-italia.it/scansione-porte-aperte-su-un-range-di-ip/) |
+| [`Report-SoftwareNonAutorizzato.ps1`](Report-SoftwareNonAutorizzato.ps1) | Confronta il software installato su un computer con una whitelist, segnalando ogni eccezione. | Accesso locale o remoto al registro di sistema | [Guida](https://sysadmin-italia.it/software-installato-non-autorizzato/) |
+| [`Verifica-BitLockerMultiplo.ps1`](Verifica-BitLockerMultiplo.ps1) | Verifica lo stato di cifratura BitLocker su un elenco di computer. | PowerShell Remoting, modulo BitLocker sui target | [Guida](https://sysadmin-italia.it/stato-bitlocker-su-tutti-gli-endpoint/) |
+| [`Verifica-DefenderMultiplo.ps1`](Verifica-DefenderMultiplo.ps1) | Verifica lo stato di protezione Defender su un elenco di computer remoti. | PowerShell Remoting abilitato sui computer target | [Guida](https://sysadmin-italia.it/stato-windows-defender-su-piu-endpoint/) |
+| [`Report-RDPFalliti.ps1`](Report-RDPFalliti.ps1) | Analizza il log eventi per tentativi di accesso RDP falliti, un vettore di attacco molto comune. | Permessi di lettura sul log di sicurezza | [Guida](https://sysadmin-italia.it/tentativi-di-accesso-rdp-falliti/) |
+| [`Report-UltimoAggiornamentoAV.ps1`](Report-UltimoAggiornamentoAV.ps1) | Verifica quando ogni endpoint ha aggiornato per l’ultima volta le firme antivirus. | PowerShell Remoting sui computer target | [Guida](https://sysadmin-italia.it/ultimo-aggiornamento-antivirus-per-host/) |
+| [`Report-AdminLocaliMultipli.ps1`](Report-AdminLocaliMultipli.ps1) | Interroga piu computer e riporta i membri del gruppo Administrators locale su ciascuno. | Accesso WinRM/PowerShell Remoting sui computer target | [Guida](https://sysadmin-italia.it/utenti-locali-con-privilegi-amministrativi/) |
+
+[← Tutte le categorie](../README.md) · [SysAdmin Italia](https://sysadmin-italia.it/script-gratuiti/)

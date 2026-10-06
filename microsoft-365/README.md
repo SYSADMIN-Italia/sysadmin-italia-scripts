@@ -1,0 +1,24 @@
+# Script PowerShell: Microsoft 365
+
+16 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
+
+| Script | Cosa fa | Prerequisiti | Guida |
+|---|---|---|---|
+| [`Report-AccessiPaesiInsoliti.ps1`](Report-AccessiPaesiInsoliti.ps1) | Analizza i log di accesso ed evidenzia connessioni da paesi non presenti in una whitelist definita. | Modulo Microsoft.Graph, permessi AuditLog.Read.All | [Guida](https://sysadmin-italia.it/accessi-da-paesi-non-abituali/) |
+| [`Report-AuditAmministrativo.ps1`](Report-AuditAmministrativo.ps1) | Estrae dal registro di controllo unificato le operazioni amministrative piu recenti. | Modulo ExchangeOnlineManagement, ruolo di audit | [Guida](https://sysadmin-italia.it/attivita-amministrative-recenti/) |
+| [`Report-CaselleCondivise.ps1`](Report-CaselleCondivise.ps1) | Esporta tutte le caselle di posta condivise e chi ha accesso a ciascuna. | Modulo ExchangeOnlineManagement | [Guida](https://sysadmin-italia.it/caselle-condivise-e-relativi-permessi/) |
+| [`Verifica-DKIMDMARCSPF.ps1`](Verifica-DKIMDMARCSPF.ps1) | Verifica lo stato di DKIM su Exchange Online e la presenza dei record SPF/DMARC nel DNS pubblico. | Modulo ExchangeOnlineManagement, DnsClient | [Guida](https://sysadmin-italia.it/configurazione-dkim-dmarc-spf-del-dominio/) |
+| [`Report-DispositiviIntuneNonConformi.ps1`](Report-DispositiviIntuneNonConformi.ps1) | Elenca i dispositivi gestiti da Intune che risultano non conformi alle policy configurate. | Modulo Microsoft.Graph, permessi DeviceManagementManagedDevices.Read.All | [Guida](https://sysadmin-italia.it/dispositivi-intune-non-conformi/) |
+| [`Export-GruppiM365.ps1`](Export-GruppiM365.ps1) | Esporta tutti i gruppi Microsoft 365 del tenant con l’elenco completo dei rispettivi membri. | Modulo Microsoft.Graph, permessi Group.Read.All | [Guida](https://sysadmin-italia.it/elenco-gruppi-microsoft-365-e-membri/) |
+| [`Report-FileCondivisiEsternamente.ps1`](Report-FileCondivisiEsternamente.ps1) | Individua i siti SharePoint con condivisione esterna attiva e file condivisi al di fuori dell’organizzazione. | Modulo Microsoft.Online.SharePoint.PowerShell | [Guida](https://sysadmin-italia.it/file-condivisi-esternamente-su-sharepoint-onedrive/) |
+| [`Report-LicenzeAssegnate.ps1`](Report-LicenzeAssegnate.ps1) | Riepiloga per ogni SKU quante licenze sono totali, assegnate e disponibili. | Modulo Microsoft.Graph, permessi Organization.Read.All | [Guida](https://sysadmin-italia.it/licenze-assegnate-e-inutilizzate/) |
+| [`Report-MailboxOversize.ps1`](Report-MailboxOversize.ps1) | Individua le caselle di posta che superano una soglia di dimensione configurabile. | Modulo ExchangeOnlineManagement | [Guida](https://sysadmin-italia.it/mailbox-con-dimensione-superiore-a-soglia/) |
+| [`Report-PolicyConservazione.ps1`](Report-PolicyConservazione.ps1) | Elenca le policy di conservazione (retention) configurate nel centro conformita. | Modulo ExchangeOnlineManagement, permessi Compliance | [Guida](https://sysadmin-italia.it/policy-di-conservazione-email-attive/) |
+| [`Report-RegoleInoltroSospette.ps1`](Report-RegoleInoltroSospette.ps1) | Individua regole di inoltro automatico verso indirizzi esterni al dominio aziendale. | Modulo ExchangeOnlineManagement | [Guida](https://sysadmin-italia.it/regole-di-inoltro-email-sospette/) |
+| [`Report-RuoliAmministrativi.ps1`](Report-RuoliAmministrativi.ps1) | Elenca tutti gli utenti assegnati a ruoli con privilegi amministrativi nel tenant. | Modulo Microsoft.Graph, permessi RoleManagement.Read.Directory | [Guida](https://sysadmin-italia.it/utenti-con-ruoli-amministrativi-microsoft-365/) |
+| [`Report-GuestInattivi.ps1`](Report-GuestInattivi.ps1) | Individua gli account guest che non accedono al tenant da tempo. | Modulo Microsoft.Graph, permessi User.Read.All, AuditLog.Read.All | [Guida](https://sysadmin-italia.it/utenti-guest-inattivi/) |
+| [`Report-UtentiSenzaLicenza.ps1`](Report-UtentiSenzaLicenza.ps1) | Individua gli account attivi che non hanno alcuna licenza Microsoft 365 assegnata. | Modulo Microsoft.Graph, permessi User.Read.All | [Guida](https://sysadmin-italia.it/utenti-senza-licenza-assegnata/) |
+| [`Report-UtentiSenzaMFA.ps1`](Report-UtentiSenzaMFA.ps1) | Individua gli utenti che non hanno alcun metodo di autenticazione a piu fattori registrato. | Modulo Microsoft.Graph, permessi UserAuthenticationMethod.Read.All | [Guida](https://sysadmin-italia.it/utenti-senza-mfa-configurato/) |
+| [`Report-UtilizzoOneDrive.ps1`](Report-UtilizzoOneDrive.ps1) | Esporta lo spazio utilizzato su OneDrive da ciascun utente, tramite i report di utilizzo di Microsoft 365. | Modulo Microsoft.Graph, permessi Reports.Read.All | [Guida](https://sysadmin-italia.it/utilizzo-storage-onedrive-per-utente/) |
+
+[← Tutte le categorie](../README.md) · [SysAdmin Italia](https://sysadmin-italia.it/script-gratuiti/)

@@ -1,0 +1,28 @@
+# Script PowerShell: Database
+
+20 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
+
+| Script | Cosa fa | Prerequisiti | Guida |
+|---|---|---|---|
+| [`Backup-DatabaseSQL.ps1`](Backup-DatabaseSQL.ps1) | Esegue un backup completo compresso di un database specifico, con nome file datato automaticamente. | Modulo SqlServer, permessi di backup | [Guida](https://sysadmin-italia.it/backup-manuale-di-un-database-sql-server/) |
+| [`Report-BackupSQLScaduti.ps1`](Report-BackupSQLScaduti.ps1) | Verifica quali database non hanno un backup completo recente, incrociando i dati di msdb. | Modulo SqlServer, permessi di lettura su msdb | [Guida](https://sysadmin-italia.it/backup-sql-server-scaduti-o-mancanti/) |
+| [`Verifica-ConnessioniMySQL.ps1`](Verifica-ConnessioniMySQL.ps1) | Elenca tutte le connessioni attive su un server MySQL, con utente, host e comando in esecuzione. | Client mysql installato e raggiungibile nel PATH | [Guida](https://sysadmin-italia.it/connessioni-attive-su-unistanza-mysql/) |
+| [`Verifica-IntegritaDatabase.ps1`](Verifica-IntegritaDatabase.ps1) | Esegue DBCC CHECKDB su un database e registra l’esito in un log, con avviso in caso di errori. | Modulo SqlServer, permessi adeguati | [Guida](https://sysadmin-italia.it/controllo-integrita-database-dbcc-checkdb/) |
+| [`Export-ElencoDatabase.ps1`](Export-ElencoDatabase.ps1) | Esporta un inventario di tutti i database dell’istanza con stato, data creazione e livello di compatibilita. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/elenco-completo-dei-database-con-dettagli/) |
+| [`Report-AutogrowthEventi.ps1`](Report-AutogrowthEventi.ps1) | Recupera dal Default Trace gli eventi di crescita automatica dei file database recenti. | Modulo SqlServer, Default Trace attivo sull’istanza | [Guida](https://sysadmin-italia.it/eventi-di-autogrowth-dei-file-database/) |
+| [`Report-IndiciFrammentati.ps1`](Report-IndiciFrammentati.ps1) | Individua gli indici con frammentazione sopra soglia, candidati a riorganizzazione o ricostruzione. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/indici-sql-server-frammentati/) |
+| [`Report-QueryLente.ps1`](Report-QueryLente.ps1) | Individua le query con tempo medio di esecuzione piu alto, a partire dalle statistiche interne del motore. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/le-query-piu-lente-in-esecuzione/) |
+| [`Report-TabelleMySQLPiuGrandi.ps1`](Report-TabelleMySQLPiuGrandi.ps1) | Individua le tabelle che occupano piu spazio su un server MySQL, su tutti gli schemi. | Client mysql installato e raggiungibile nel PATH | [Guida](https://sysadmin-italia.it/le-tabelle-mysql-piu-grandi/) |
+| [`Report-UtentiAccessoSQL.ps1`](Report-UtentiAccessoSQL.ps1) | Esporta tutti i login configurati su un’istanza, con tipo e stato di attivazione. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/login-con-accesso-a-unistanza-sql-server/) |
+| [`Report-LoginRischiosi.ps1`](Report-LoginRischiosi.ps1) | Verifica se l’account sa e attivo e quali login hanno la password scaduta. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/login-sql-server-potenzialmente-a-rischio/) |
+| [`Verifica-RecoveryModel.ps1`](Verifica-RecoveryModel.ps1) | Verifica la modalita di recovery (Full/Simple/Bulk-logged) configurata su ogni database. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/modalita-di-recovery-dei-database/) |
+| [`Report-BloccoSQL.ps1`](Report-BloccoSQL.ps1) | Individua in tempo reale le sessioni bloccate e la sessione che le sta bloccando. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/sessioni-bloccate-su-sql-server/) |
+| [`Report-SpazioDatabaseSQL.ps1`](Report-SpazioDatabaseSQL.ps1) | Riepiloga la dimensione di tutti i database su un’istanza, ordinati dal piu grande al piu piccolo. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/spazio-occupato-dai-database-sql-server/) |
+| [`Verifica-SpazioLogTransazioni.ps1`](Verifica-SpazioLogTransazioni.ps1) | Verifica la percentuale di utilizzo del log delle transazioni per ogni database. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/spazio-utilizzato-dai-log-delle-transazioni/) |
+| [`Report-StatisticheObsolete.ps1`](Report-StatisticheObsolete.ps1) | Individua le statistiche di tabella non aggiornate da tempo, che possono causare piani di esecuzione inefficienti. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/statistiche-del-query-optimizer-obsolete/) |
+| [`Verifica-AlwaysOnAG.ps1`](Verifica-AlwaysOnAG.ps1) | Verifica lo stato di sincronizzazione delle repliche in un Always On Availability Group. | Modulo SqlServer, Always On configurato | [Guida](https://sysadmin-italia.it/stato-degli-always-on-availability-group/) |
+| [`Verifica-JobSQLAgent.ps1`](Verifica-JobSQLAgent.ps1) | Verifica l’esito dell’ultima esecuzione di ogni job pianificato su SQL Server Agent. | Modulo SqlServer, SQL Server Agent attivo | [Guida](https://sysadmin-italia.it/stato-dei-job-di-sql-server-agent/) |
+| [`Verifica-MaintenancePlan.ps1`](Verifica-MaintenancePlan.ps1) | Elenca i Maintenance Plan configurati sull’istanza con l’esito della loro ultima esecuzione. | Modulo SqlServer | [Guida](https://sysadmin-italia.it/stato-dei-maintenance-plan-configurati/) |
+| [`Verifica-ReplicaMySQL.ps1`](Verifica-ReplicaMySQL.ps1) | Verifica lo stato dei thread di replica e il ritardo dal master su un server MySQL slave. | Client mysql installato e raggiungibile nel PATH | [Guida](https://sysadmin-italia.it/stato-della-replica-mysql-master-slave/) |
+
+[← Tutte le categorie](../README.md) · [SysAdmin Italia](https://sysadmin-italia.it/script-gratuiti/)

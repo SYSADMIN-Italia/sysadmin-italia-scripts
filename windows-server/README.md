@@ -1,0 +1,24 @@
+# Script PowerShell: Windows Server
+
+16 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
+
+| Script | Cosa fa | Prerequisiti | Guida |
+|---|---|---|---|
+| [`Verifica-CertificatiLocali.ps1`](Verifica-CertificatiLocali.ps1) | Verifica i certificati installati nell’archivio locale del server, segnalando quelli in scadenza. | Nessuno, PowerShell nativo | [Guida](https://sysadmin-italia.it/certificati-locali-in-scadenza/) |
+| [`Verifica-BackupNativo.ps1`](Verifica-BackupNativo.ps1) | Verifica che Windows Server Backup sia configurato e che l’ultimo job sia andato a buon fine. | Modulo WindowsServerBackup | [Guida](https://sysadmin-italia.it/configurazione-del-backup-nativo-di-windows-server/) |
+| [`Export-RuoliFunzionalita.ps1`](Export-RuoliFunzionalita.ps1) | Esporta l’elenco completo dei ruoli e delle funzionalita di Windows Server installati. | Modulo ServerManager (nativo su Windows Server) | [Guida](https://sysadmin-italia.it/configurazione-ruoli-e-funzionalita-installati/) |
+| [`Report-EventiCriticiSistema.ps1`](Report-EventiCriticiSistema.ps1) | Estrae dai log System e Application gli eventi di livello Critico o Errore recenti. | Nessuno, PowerShell nativo | [Guida](https://sysadmin-italia.it/log-eventi-critici-delle-ultime-24-ore/) |
+| [`Audit-ModificheLocalSecurityPolicy.ps1`](Audit-ModificheLocalSecurityPolicy.ps1) | Confronta la Local Security Policy corrente con una baseline salvata, evidenziando le differenze. | Permessi amministrativi, secedit (nativo) | [Guida](https://sysadmin-italia.it/modifiche-recenti-alla-local-security-policy/) |
+| [`Report-TaskSchedulerErrori.ps1`](Report-TaskSchedulerErrori.ps1) | Individua le attivita pianificate la cui ultima esecuzione e terminata con un codice di errore. | Nessuno, PowerShell nativo | [Guida](https://sysadmin-italia.it/pianificazioni-task-scheduler-terminate-con-errore/) |
+| [`Report-ProcessiAnomali.ps1`](Report-ProcessiAnomali.ps1) | Individua i processi con consumo di CPU o memoria superiore a soglie configurabili. | Nessuno, PowerShell nativo | [Guida](https://sysadmin-italia.it/processi-con-utilizzo-cpu-ram-anomalo/) |
+| [`Pulizia-FileTemporanei.ps1`](Pulizia-FileTemporanei.ps1) | Elimina file temporanei e log piu vecchi di una soglia configurabile in percorsi specificati. | Permessi di scrittura sui percorsi target | [Guida](https://sysadmin-italia.it/pulizia-automatica-di-file-temporanei-e-log-datati/) |
+| [`Report-ServiziInErrore.ps1`](Report-ServiziInErrore.ps1) | Individua i servizi configurati per l’avvio automatico ma che risultano fermi. | Nessuno, PowerShell nativo | [Guida](https://sysadmin-italia.it/servizi-windows-in-stato-di-errore/) |
+| [`Report-SpazioDiscoMultiServer.ps1`](Report-SpazioDiscoMultiServer.ps1) | Controlla lo spazio disco disponibile su un elenco di server, segnalando i volumi sotto soglia. | Connettivita WMI/CIM verso i server target | [Guida](https://sysadmin-italia.it/spazio-disco-su-piu-server-con-alert/) |
+| [`Report-StampantiCondivise.ps1`](Report-StampantiCondivise.ps1) | Elenca tutte le stampanti condivise su un server con lo stato corrente di ciascuna. | Nessuno, PowerShell nativo | [Guida](https://sysadmin-italia.it/stampanti-condivise-e-relativo-stato/) |
+| [`Report-AggiornamentiMancanti.ps1`](Report-AggiornamentiMancanti.ps1) | Interroga il servizio Windows Update locale e riporta gli aggiornamenti disponibili non ancora installati. | Nessuno, usa il COM object nativo di Windows Update | [Guida](https://sysadmin-italia.it/stato-aggiornamenti-windows-mancanti/) |
+| [`Verifica-StatoClusterFailover.ps1`](Verifica-StatoClusterFailover.ps1) | Verifica lo stato dei nodi e delle risorse di un cluster failover Windows Server. | Modulo FailoverClusters (RSAT) | [Guida](https://sysadmin-italia.it/stato-del-cluster-failover/) |
+| [`Verifica-AttivazioneLicenze.ps1`](Verifica-AttivazioneLicenze.ps1) | Verifica lo stato di attivazione della licenza Windows Server su un elenco di server. | Connettivita CIM verso i server target | [Guida](https://sysadmin-italia.it/stato-di-attivazione-licenze-windows-server/) |
+| [`Report-UptimeServer.ps1`](Report-UptimeServer.ps1) | Verifica da quanto tempo ogni server e attivo dall’ultimo riavvio. | Connettivita WMI/CIM verso i server target | [Guida](https://sysadmin-italia.it/uptime-di-tutti-i-server/) |
+| [`Report-AdminLocaliServer.ps1`](Report-AdminLocaliServer.ps1) | Documenta i membri del gruppo Administrators locale su un elenco di server. | Connettivita PowerShell Remoting verso i server target | [Guida](https://sysadmin-italia.it/utenti-locali-con-accesso-amministrativo/) |
+
+[← Tutte le categorie](../README.md) · [SysAdmin Italia](https://sysadmin-italia.it/script-gratuiti/)

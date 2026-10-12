@@ -1,9 +1,10 @@
 # Script PowerShell: Active Directory
 
-14 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
+15 script gratuiti. Ogni script ha una guida sul sito con spiegazione, parametri e PDF scaricabile.
 
 | Script | Cosa fa | Prerequisiti | Guida |
 |---|---|---|---|
+| [`Report-SistemiOperativiFuoriSupporto.ps1`](Report-SistemiOperativiFuoriSupporto.ps1) | Elenca i computer del dominio con un sistema operativo fuori supporto o in scadenza, confrontandoli con le date ufficiali Microsoft. | Modulo ActiveDirectory (RSAT), PowerShell 5.1 o 7, utente di dominio | [Guida](https://sysadmin-italia.it/computer-dominio-sistema-operativo-fuori-supporto/) |
 | [`Report-ComputerInattivi.ps1`](Report-ComputerInattivi.ps1) | Report dei computer che non effettuano login da tempo, primo passo prima di una pulizia. | Modulo ActiveDirectory (RSAT) | [Guida](https://sysadmin-italia.it/computer-inattivi-da-piu-di-n-giorni/) |
 | [`Crea-UtentiDaCSV.ps1`](Crea-UtentiDaCSV.ps1) | Crea piu utenti contemporaneamente da un file CSV, con controllo duplicati e simulazione. | Modulo ActiveDirectory, permessi di creazione oggetti | [Guida](https://sysadmin-italia.it/creazione-utenti-in-blocco-da-csv/) |
 | [`Report-DelegaNonVincolata.ps1`](Report-DelegaNonVincolata.ps1) | Individua account con delega Kerberos non vincolata, configurazione ad alto rischio. | Modulo ActiveDirectory | [Guida](https://sysadmin-italia.it/delega-kerberos-non-vincolata/) |

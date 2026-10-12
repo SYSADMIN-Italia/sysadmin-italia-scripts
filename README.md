@@ -1,6 +1,6 @@
 # SysAdmin Italia: script PowerShell gratuiti
 
-Raccolta di **120 script PowerShell** per sistemisti, scritti in italiano e pensati per problemi reali: Active Directory, Windows Server, Microsoft 365, sicurezza, rete, VMware, database e automazione.
+Raccolta di **121 script PowerShell** per sistemisti, scritti in italiano e pensati per problemi reali: Active Directory, Windows Server, Microsoft 365, sicurezza, rete, VMware, database e automazione.
 
 Ogni script ha una **guida dedicata su [sysadmin-italia.it](https://sysadmin-italia.it/script-gratuiti/)** con spiegazione, prerequisiti e PDF scaricabile.
 
@@ -8,7 +8,7 @@ Ogni script ha una **guida dedicata su [sysadmin-italia.it](https://sysadmin-ita
 
 | Categoria | Script |
 |---|---|
-| [Active Directory](active-directory/) | 14 |
+| [Active Directory](active-directory/) | 15 |
 | [Windows Server](windows-server/) | 16 |
 | [Microsoft 365](microsoft-365/) | 16 |
 | [Cyber Security](cyber-security/) | 16 |

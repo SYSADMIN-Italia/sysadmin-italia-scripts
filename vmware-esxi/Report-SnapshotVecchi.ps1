@@ -11,8 +11,7 @@ $snapshot = Get-VM | Get-Snapshot
 
 $dataLimite = (Get-Date).AddDays(-$GiorniSoglia)
 
-$risultati = $snapshot | Where-Object { $_.Created -lt $dataLimite } | Select-Object
-    @{N="VM";E={$_.VM.Name}}, Name, Created,
+$risultati = $snapshot | Where-Object { $_.Created -lt $dataLimite } | Select-Object @{N="VM";E={$_.VM.Name}}, Name, Created,
     @{N="GiorniEta";E={((Get-Date) - $_.Created).Days}},
     @{N="DimensioneGB";E={[math]::Round($_.SizeGB, 2)}}
 
